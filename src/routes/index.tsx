@@ -76,7 +76,7 @@ function Dobra01() {
           <strong className="text-[var(--brand-yellow)]">hoje mesmo</strong>.
         </p>
         <p className="mt-4 text-sm uppercase tracking-widest text-white/50">
-          Pare de polir no achismo · Padronize sua execução
+          <br />
         </p>
 
         <div className="mt-10 flex w-full justify-center">
