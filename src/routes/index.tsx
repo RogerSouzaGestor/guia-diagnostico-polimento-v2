@@ -331,8 +331,10 @@ function Dobra06() {
           <ul className="space-y-3 text-sm sm:text-base">
             <li className="flex items-start gap-3">
               <span className="text-[var(--brand-red)]">→</span>
-              Acesso ao <strong>grupo exclusivo no WhatsApp</strong> com outros donos de
-              estética para trocar experiências e tirar dúvidas.
+              <span>
+                Acesso ao <strong>grupo exclusivo no WhatsApp</strong> com outros donos de
+                estética para trocar experiências e tirar dúvidas.
+              </span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[var(--brand-red)]">→</span>
