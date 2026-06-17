@@ -58,10 +58,6 @@ function Dobra01() {
         }}
       />
       <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
-        <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--brand-yellow)]">
-          <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-red)]" />
-          Estética Automotiva Premium
-        </span>
         <h1 className="font-display text-4xl uppercase leading-[0.95] tracking-tight sm:text-6xl md:text-7xl">
           Guia de Diagnóstico
           <br />
