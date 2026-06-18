@@ -237,23 +237,28 @@ const steps = [
     n: "01",
     title: "Diagnostique",
     text: "Identifique com precisão o tipo de verniz que está na sua frente em segundos.",
+    image: "https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788252/01_Diagnostique_vzvqwj.jpg",
   },
   {
     n: "02",
     title: "Escolha",
     text: "Selecione a politriz, o composto e o disco certos para aquele verniz específico.",
+    image: "https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788344/02_Escolha_wbami4.jpg",
   },
   {
     n: "03",
     title: "Execute",
     text: "Siga o protocolo de polimento passo a passo com segurança e precisão técnica.",
+    image: "https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788344/03_Execute_zwcxpj.jpg",
   },
   {
     n: "04",
     title: "Replique",
     text: "Use o checklist de entrega e treine seu funcionário para manter o mesmo padrão.",
+    image: "https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788345/04_Replique_clzi85.jpg",
   },
 ];
+
 
 function Dobra05() {
   return (
@@ -274,6 +279,13 @@ function Dobra05() {
               </div>
               <h3 className="mt-4 font-display text-2xl uppercase">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/70">{s.text}</p>
+              <img
+                src={s.image}
+                alt={s.title}
+                loading="lazy"
+                className="mt-5 aspect-square w-full rounded-lg object-cover"
+              />
+
             </div>
           ))}
         </div>
