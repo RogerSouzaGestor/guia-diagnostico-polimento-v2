@@ -559,7 +559,7 @@ function Dobra10() {
           retrabalhado por mês?
         </h2>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-neutral-700 sm:text-lg">
-          Um cliente premium insatisfeito não volta — e ainda fala mal pra três amigos. Em 6 meses
+          Um cliente premium insatisfeito não volta e ainda fala mal para três amigos. Em 6 meses
           sem padrão, você perde mais em reputação do que pagaria{" "}
           <strong className="text-[var(--ink)]">300 vezes</strong> por este guia.
         </p>
