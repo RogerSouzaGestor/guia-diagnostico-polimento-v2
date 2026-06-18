@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import ebookMockupAsset from "@/assets/ebook-mockup.png.asset.json";
 const ebookMockup = ebookMockupAsset.url;
-import expertPhoto from "@/assets/expert.jpg";
+import expertPhotoAsset from "@/assets/mateus.jpg.asset.json";
+const expertPhoto = expertPhotoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
