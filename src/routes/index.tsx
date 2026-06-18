@@ -594,6 +594,7 @@ function Dobra11() {
             width={120}
             height={120}
             loading="lazy"
+            decoding="async"
             className="h-[120px] w-[120px] rounded-full object-cover ring-4 ring-[var(--brand-red)]"
           />
           <div>
