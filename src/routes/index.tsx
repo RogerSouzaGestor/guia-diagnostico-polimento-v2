@@ -588,14 +588,19 @@ function Dobra11() {
 
         <div className="mx-auto mt-8 max-w-2xl space-y-4 text-center text-sm leading-relaxed text-white/80 sm:text-base">
           <p>
-            Fundador e dono da VIP Car Detail. Quase{" "}
-            <strong className="text-white">20 anos no mercado</strong> de estética automotiva
-            desde 2006.
+            Sou fundador e dono da VIP Car Detail, e estou no mercado de estética automotiva desde
+            2006. São quase <strong className="text-white">20 anos</strong> vivendo, errando e
+            evoluindo dentro desse setor.
           </p>
           <p>
-            Passei por tudo que você vive hoje: a dúvida, o cansaço, o medo de cobrar mais. Foi
-            isso que me fez estudar, aplicar e me tornar um dos maiores especialistas em estética
-            automotiva do país.
+            Já treinei mais de <strong className="text-white">4.000 profissionais</strong> e sou{" "}
+            <strong className="text-white">Master Trainer certificado pela SONAX</strong>. Mas o
+            que me move não são os números, é a missão.
+          </p>
+          <p>
+            Passei por tudo que você vive hoje: a dúvida, o cansaço, a falta de reconhecimento, o
+            medo de cobrar mais. Foi exatamente isso que me fez estudar, aplicar e me tornar um dos
+            maiores especialistas em estética automotiva do país.
           </p>
           <p>
             Hoje eu ensino profissionais a pararem de trocar hora por dinheiro e construírem uma
