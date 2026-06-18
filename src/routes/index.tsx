@@ -72,11 +72,7 @@ function Dobra01() {
           executa com segurança e consegue repassar para sua equipe{" "}
           <strong className="text-[var(--brand-yellow)]">hoje mesmo</strong>.
         </p>
-        <p className="mt-4 text-sm uppercase tracking-widest text-white/50">
-          <br />
-        </p>
-
-        <div className="mt-10 flex w-full justify-center">
+        <div className="mt-6 flex w-full justify-center">
           <div className="relative">
             <div
               aria-hidden
@@ -86,9 +82,9 @@ function Dobra01() {
             <img
               src={ebookMockup}
               alt="Mockup do Guia de Diagnóstico e Protocolo de Polimento Técnico em iPad"
-              width={400}
-              height={500}
-              className="relative w-[280px] sm:w-[360px] md:w-[420px] drop-shadow-2xl"
+              width={560}
+              height={700}
+              className="relative w-[360px] sm:w-[480px] md:w-[580px] lg:w-[640px] drop-shadow-2xl"
             />
           </div>
         </div>
