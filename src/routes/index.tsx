@@ -88,6 +88,9 @@ function Dobra01() {
               alt="Mockup do Guia de Diagnóstico e Protocolo de Polimento Técnico em iPad"
               width={560}
               height={700}
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
               className="relative w-[360px] sm:w-[480px] md:w-[580px] lg:w-[640px] drop-shadow-2xl"
             />
           </div>
@@ -282,7 +285,10 @@ function Dobra05() {
               <img
                 src={s.image}
                 alt={s.title}
+                width={600}
+                height={600}
                 loading="lazy"
+                decoding="async"
                 className="mt-5 aspect-square w-full rounded-lg object-cover"
               />
 
@@ -588,6 +594,7 @@ function Dobra11() {
             width={120}
             height={120}
             loading="lazy"
+            decoding="async"
             className="h-[120px] w-[120px] rounded-full object-cover ring-4 ring-[var(--brand-red)]"
           />
           <div>
