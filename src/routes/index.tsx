@@ -676,27 +676,16 @@ function Dobra12() {
 }
 
 function FaqItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
   return (
-    <div>
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left transition hover:bg-white/5"
-      >
+    <details className="group">
+      <summary className="grid w-full cursor-pointer list-none grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left transition hover:bg-white/5 [&::-webkit-details-marker]:hidden">
         <span className="min-w-0 text-sm font-semibold text-white sm:text-base">{q}</span>
-        <span
-          className={`shrink-0 font-display text-2xl text-[var(--brand-red)] transition-transform ${
-            open ? "rotate-45" : ""
-          }`}
-        >
+        <span className="shrink-0 font-display text-2xl text-[var(--brand-red)] transition-transform group-open:rotate-45">
           +
         </span>
-      </button>
-      {open && (
-        <div className="px-5 pb-5 text-sm leading-relaxed text-white/75">{a}</div>
-      )}
-    </div>
+      </summary>
+      <div className="px-5 pb-5 text-sm leading-relaxed text-white/75">{a}</div>
+    </details>
   );
 }
 
