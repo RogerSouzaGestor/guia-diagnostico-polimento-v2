@@ -89,7 +89,6 @@ function Dobra01() {
               width={560}
               height={700}
               fetchPriority="high"
-              decoding="async"
               className="relative w-[360px] sm:w-[480px] md:w-[580px] lg:w-[640px] drop-shadow-2xl"
             />
           </div>
