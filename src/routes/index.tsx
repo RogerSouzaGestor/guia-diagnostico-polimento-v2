@@ -21,14 +21,6 @@ export const Route = createFileRoute("/")({
           "Pare de polir no achismo. Diagnóstico, protocolo e padronização para estéticas automotivas.",
       },
     ],
-    links: [
-      {
-        rel: "preload",
-        as: "image",
-        href: ebookMockup,
-        fetchpriority: "high",
-      },
-    ],
   }),
   component: SalesPage,
 });
