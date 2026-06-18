@@ -285,7 +285,10 @@ function Dobra05() {
               <img
                 src={s.image}
                 alt={s.title}
+                width={600}
+                height={600}
                 loading="lazy"
+                decoding="async"
                 className="mt-5 aspect-square w-full rounded-lg object-cover"
               />
 
