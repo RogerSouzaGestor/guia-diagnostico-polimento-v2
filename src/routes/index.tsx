@@ -636,7 +636,7 @@ const faqs = [
   },
   {
     q: "Como recebo o acesso?",
-    a: "Em até 2 minutos no seu e-mail você recebe o PDF, a tabela, o checklist e o link do grupo VIP.",
+    a: "Após a confirmação do pagamento, você receberá um e-mail com os dados de acesso à Área de Membros. Nela, você encontrará todos os materiais do curso disponíveis para consulta.",
   },
 ];
 
