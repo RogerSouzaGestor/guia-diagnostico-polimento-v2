@@ -78,7 +78,7 @@ function Dobra01() {
           executa com segurança e consegue repassar para sua equipe{" "}
           <strong className="text-[var(--brand-yellow)]">hoje mesmo</strong>.
         </p>
-        <div className="-mt-4 -mb-12 flex w-full justify-center sm:-mt-6 sm:-mb-20">
+        <div className="-mt-12 -mb-12 flex w-full justify-center sm:-mt-16 sm:-mb-20">
           <div className="relative">
             <div
               aria-hidden
