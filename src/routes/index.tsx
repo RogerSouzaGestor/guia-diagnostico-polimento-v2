@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { SocialProofNotifications } from "@/components/SocialProofNotifications";
 import ebookMockupAsset from "@/assets/ebook-mockup.webp.asset.json";
 const ebookMockup = ebookMockupAsset.url;
 import expertPhotoAsset from "@/assets/mateus.jpg.asset.json";
