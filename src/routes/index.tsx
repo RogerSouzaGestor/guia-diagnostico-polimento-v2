@@ -635,7 +635,7 @@ function Dobra11() {
 const faqs = [
   {
     q: "Como funciona o pagamento?",
-    a: "Você pode pagar via Pix, cartão de crédito em até 12x ou boleto. A liberação é automática após a confirmação.",
+    a: "Você pode pagar via Pix, cartão de crédito em até 8x ou boleto. A liberação é automática após a confirmação.",
   },
   {
     q: "É seguro comprar?",
