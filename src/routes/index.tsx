@@ -44,6 +44,7 @@ function SalesPage() {
       <Dobra10 />
       <Dobra11 />
       <Dobra12 />
+      <SocialProofNotifications />
     </main>
   );
 }
