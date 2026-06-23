@@ -467,7 +467,7 @@ function Dobra08() {
           ))}
           <li className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 bg-[var(--brand-red)]/10 px-5 py-5">
             <span className="font-display text-lg uppercase">Total real</span>
-            <span className="font-display text-2xl text-[var(--brand-yellow)]">{total}</span>
+            <span className="font-display text-2xl text-[var(--brand-yellow)] line-through">{total}</span>
           </li>
         </ul>
       </div>
