@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
   component: SalesPage,
 });
 
-const PRICE_INSTALLMENT = "R$ 3,70";
+const PRICE_INSTALLMENT = "R$ 5,50";
 const PRICE_FULL = "R$ 37,00";
 
 function SalesPage() {
@@ -482,7 +482,7 @@ function PriceCard() {
       </p>
       <div className="mt-3 text-center">
         <div className="font-display text-4xl text-white sm:text-5xl">
-          12x de <span className="text-[var(--brand-yellow)]">{PRICE_INSTALLMENT}</span>
+          8x de <span className="text-[var(--brand-yellow)]">{PRICE_INSTALLMENT}</span>
         </div>
         <p className="mt-2 text-sm text-white/70">
           ou <strong className="text-white">{PRICE_FULL}</strong> à vista
