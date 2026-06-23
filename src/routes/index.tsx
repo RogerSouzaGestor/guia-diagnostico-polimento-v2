@@ -425,17 +425,17 @@ function Dobra07() {
 
 /* ---------------- DOBRA 08 — ANCORAGEM ---------------- */
 const anchorItems = [
-  { label: "Guia completo em PDF (10 capítulos)", price: "R$ 197" },
-  { label: "5 protocolos prontos por tipo de verniz", price: "R$ 147" },
-  { label: "Tabela de referência de vernizes premium", price: "R$ 97" },
-  { label: "Checklist de entrega imprimível", price: "R$ 47" },
-  { label: "Certificado oficial assinado", price: "R$ 127" },
-  { label: "Bônus: Grupo VIP no WhatsApp", price: "R$ 97" },
-  { label: "Bônus: Imersão gravada", price: "R$ 197" },
+  { label: "Guia de Diagnóstico e Protocolo de Polimento Técnico (10 capítulos)", price: "R$ 197" },
+  {
+    label:
+      "Bônus: Acesso ao grupo exclusivo no WhatsApp com outros donos de estética para trocar experiências e tirar dúvidas",
+    price: "R$ 297",
+  },
+  { label: "Bônus: Imersão gravada sobre polimento comercial e técnico na prática", price: "R$ 497" },
 ];
 
 function Dobra08() {
-  const total = "R$ 909";
+  const total = "R$ 991";
   return (
     <section className="bg-[var(--surface)] px-6 py-20 sm:py-24">
       <div className="mx-auto max-w-3xl">
@@ -452,7 +452,7 @@ function Dobra08() {
               key={i.label}
               className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4"
             >
-              <span className="min-w-0 truncate text-sm text-white/85 sm:text-base">
+              <span className="min-w-0 text-sm text-white/85 sm:text-base">
                 {i.label}
               </span>
               <span className="shrink-0 text-sm text-white/50 line-through sm:text-base">
