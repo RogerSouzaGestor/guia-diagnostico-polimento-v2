@@ -490,7 +490,9 @@ function PriceCard() {
       </div>
 
       <a
-        href="#checkout"
+        href="https://checkout.pagtrust.com.br/ck1624e1fa?funnel=fn4d69c5d3"
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-6 block w-full rounded-xl px-6 py-4 text-center font-display text-lg uppercase tracking-wide text-white shadow-lg transition active:scale-[0.99]"
         style={{
           backgroundColor: "var(--brand-red)",
