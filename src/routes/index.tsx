@@ -52,7 +52,7 @@ function SalesPage() {
 /* ---------------- DOBRA 01 — PROMESSA ---------------- */
 function Dobra01() {
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] px-6 pt-0 pb-20 sm:pb-28">
+    <section className="relative overflow-hidden bg-[var(--ink)] px-6 pt-0 pb-8 sm:pb-12">
       <div className="-mx-6 mb-12 bg-[var(--brand-yellow)] px-6 py-2 text-center text-xs font-extrabold uppercase tracking-widest text-black sm:text-sm">
         Exclusivo para donos de estética automotiva
       </div>
@@ -72,13 +72,13 @@ function Dobra01() {
           <br />
           <span className="text-[var(--brand-red)]">Técnico</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
+        <p className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">
           Identifique qualquer verniz e monte o protocolo de polimento correto{" "}
           <strong className="text-white">em poucas horas</strong>, com um método claro que você
           executa com segurança e consegue repassar para sua equipe{" "}
           <strong className="text-[var(--brand-yellow)]">hoje mesmo</strong>.
         </p>
-        <div className="mt-6 flex w-full justify-center">
+        <div className="mt-2 flex w-full justify-center sm:mt-3">
           <div className="relative">
             <div
               aria-hidden
