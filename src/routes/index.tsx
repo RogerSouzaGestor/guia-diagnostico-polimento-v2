@@ -425,17 +425,22 @@ function Dobra07() {
 
 /* ---------------- DOBRA 08 — ANCORAGEM ---------------- */
 const anchorItems = [
-  { label: "Guia de Diagnóstico e Protocolo de Polimento Técnico (10 capítulos)", price: "R$ 197" },
+  { label: "Guia de Diagnóstico e Protocolo de Polimento Técnico (10 capítulos)", price: "R$ 57" },
+  {
+    label:
+      "1 certificado oficial de Diagnóstico e Protocolo de Polimento Técnico assinado por Mateus Vip Car Detail, Master Trainer certificado pela SONAX",
+    price: "R$ 30",
+  },
   {
     label:
       "Bônus: Acesso ao grupo exclusivo no WhatsApp com outros donos de estética para trocar experiências e tirar dúvidas",
-    price: "R$ 297",
+    price: "R$ 30",
   },
-  { label: "Bônus: Imersão gravada sobre polimento comercial e técnico na prática", price: "R$ 497" },
+  { label: "Bônus: Imersão gravada sobre polimento comercial e técnico na prática", price: "R$ 30" },
 ];
 
 function Dobra08() {
-  const total = "R$ 991";
+  const total = "R$ 147";
   return (
     <section className="bg-[var(--surface)] px-6 py-20 sm:py-24">
       <div className="mx-auto max-w-3xl">
