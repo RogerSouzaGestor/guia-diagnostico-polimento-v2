@@ -65,11 +65,9 @@ function Dobra01() {
         }}
       />
       <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
-        <h1 className="font-display text-4xl uppercase leading-[0.95] tracking-tight sm:text-6xl md:text-7xl">
-          Guia de Diagnóstico
-          <br />e <span className="text-[var(--brand-yellow)]">Protocolo</span>
-          <br />
-          de <span className="text-[var(--brand-yellow)]">Polimento</span>{" "}
+        <h1 className="font-display text-4xl uppercase leading-[1.02] tracking-tight text-balance sm:text-5xl md:text-6xl">
+          Guia de Diagnóstico e{" "}
+          <span className="text-[var(--brand-yellow)]">Protocolo de Polimento</span>{" "}
           <span className="text-[var(--brand-red)]">Técnico</span>
         </h1>
         <p className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">
