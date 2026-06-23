@@ -452,7 +452,7 @@ function Dobra08() {
               key={i.label}
               className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4"
             >
-              <span className="min-w-0 truncate text-sm text-white/85 sm:text-base">
+              <span className="min-w-0 text-sm text-white/85 sm:text-base">
                 {i.label}
               </span>
               <span className="shrink-0 text-sm text-white/50 line-through sm:text-base">
