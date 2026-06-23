@@ -52,7 +52,7 @@ function SalesPage() {
 /* ---------------- DOBRA 01 — PROMESSA ---------------- */
 function Dobra01() {
   return (
-    <section className="relative overflow-hidden bg-[var(--ink)] px-6 pt-0 pb-20 sm:pb-28">
+    <section className="relative overflow-hidden bg-[var(--ink)] px-6 pt-0 pb-8 sm:pb-12">
       <div className="-mx-6 mb-12 bg-[var(--brand-yellow)] px-6 py-2 text-center text-xs font-extrabold uppercase tracking-widest text-black sm:text-sm">
         Exclusivo para donos de estética automotiva
       </div>
