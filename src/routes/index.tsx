@@ -72,13 +72,13 @@ function Dobra01() {
           <br />
           <span className="text-[var(--brand-red)]">Técnico</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
+        <p className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">
           Identifique qualquer verniz e monte o protocolo de polimento correto{" "}
           <strong className="text-white">em poucas horas</strong>, com um método claro que você
           executa com segurança e consegue repassar para sua equipe{" "}
           <strong className="text-[var(--brand-yellow)]">hoje mesmo</strong>.
         </p>
-        <div className="mt-6 flex w-full justify-center">
+        <div className="mt-2 flex w-full justify-center sm:mt-3">
           <div className="relative">
             <div
               aria-hidden
