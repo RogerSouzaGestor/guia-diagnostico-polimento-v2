@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Guia de Diagnóstico e Protocolo de Polimento Técnico</title>
+<meta name="description" content="Identifique qualquer verniz e monte o protocolo de polimento correto em poucas horas. Método claro para você e sua equipe executarem com segurança." />
+<meta property="og:title" content="Guia de Diagnóstico e Protocolo de Polimento Técnico" />
+<meta property="og:description" content="Pare de polir no achismo. Diagnóstico, protocolo e padronização para estéticas automotivas." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Anton', 'Oswald', 'system-ui', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          'brand-red': '#e01727',
+          'brand-yellow': '#fec233',
+          'brand-black': '#040507',
+          ink: '#0a0a0a',
+          'ink-soft': '#1f1f1f',
+          surface: '#1a1a1a',
+          'surface-2': '#252525',
+          light: '#f5f5f5',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  :root{
+    --brand-red:#e01727; --brand-yellow:#fec233; --brand-black:#040507;
+    --ink:#0a0a0a; --ink-soft:#1f1f1f; --surface:#1a1a1a; --surface-2:#252525; --light:#f5f5f5;
+  }
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:#fff;-webkit-font-smoothing:antialiased}
+  .font-display{font-family:'Anton','Oswald',system-ui,sans-serif}
+  .text-balance{text-wrap:balance}
+  details>summary::-webkit-details-marker{display:none}
+  details[open] .faq-plus{transform:rotate(45deg)}
+  #lovable-badge{display:none !important}
+
+  /* Social proof animation */
+  .sp-toast{transition:opacity .5s ease, transform .5s ease}
+  .sp-hidden{opacity:0; transform:translateY(16px); pointer-events:none}
+</style>
+</head>
+<body>
+
+<main class="font-sans bg-ink text-white antialiased">
+
+  <!-- ============ DOBRA 01 — PROMESSA ============ -->
+  <section class="relative overflow-hidden bg-ink px-6 pt-0 pb-0">
+    <div class="-mx-6 mb-12 bg-brand-yellow px-6 py-2 text-center text-xs font-extrabold uppercase tracking-widest text-black sm:text-sm">
+      Exclusivo para donos de estética automotiva
+    </div>
+    <div aria-hidden class="pointer-events-none absolute inset-0 opacity-40"
+      style="background: radial-gradient(ellipse at 20% 0%, rgba(224,23,39,0.25), transparent 50%), radial-gradient(ellipse at 80% 100%, rgba(254,194,51,0.12), transparent 55%);"></div>
+    <div class="relative mx-auto flex max-w-5xl flex-col items-center text-center">
+      <h1 class="font-display text-4xl uppercase leading-[1.02] tracking-tight text-balance sm:text-5xl md:text-6xl">
+        Guia de Diagnóstico e
+        <span class="text-brand-yellow">Protocolo de Polimento</span>
+        <span class="text-brand-red">Técnico</span>
+      </h1>
+      <p class="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">
+        Identifique qualquer verniz e monte o protocolo de polimento correto
+        <strong class="text-white">em poucas horas</strong>, com um método claro que você
+        executa com segurança e consegue repassar para sua equipe
+        <strong class="text-brand-yellow">hoje mesmo</strong>.
+      </p>
+      <div class="-mt-12 -mb-12 flex w-full justify-center sm:-mt-16 sm:-mb-20">
+        <div class="relative">
+          <div aria-hidden class="absolute -inset-8 rounded-full opacity-60 blur-3xl"
+            style="background: radial-gradient(circle, #e0172766 0%, transparent 70%);"></div>
+          <img
+            src="https://guia-diagnostico-polimento-v2.lovable.app/__l5e/assets-v1/0cf2f483-d41c-41b9-9c54-44ca49c14c60/ebook-mockup.webp"
+            alt="Mockup do Guia de Diagnóstico e Protocolo de Polimento Técnico em iPad"
+            width="560" height="700" fetchpriority="high"
+            class="relative block w-[320px] sm:w-[440px] md:w-[540px] lg:w-[600px] drop-shadow-2xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 02 — DEPOIMENTOS ============ -->
+  <section class="bg-light px-6 py-20 text-ink">
+    <div class="mx-auto max-w-2xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-4xl">O que estão dizendo</h2>
+      <p class="mt-3 text-center text-sm uppercase tracking-widest text-neutral-500">Mensagens reais de quem aplicou</p>
+      <div class="mt-12 flex flex-col gap-5" id="testimonials"></div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 03 — DORES ============ -->
+  <section class="bg-ink px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-5xl">
+        Você já se pegou pensando<span class="text-brand-red">...</span>
+      </h2>
+      <div class="mt-12 grid gap-4 md:grid-cols-2" id="voices"></div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 04 — TRANSIÇÃO ============ -->
+  <section class="bg-light px-6 py-20 text-ink sm:py-24">
+    <div class="mx-auto max-w-4xl text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-brand-red">Entenda de uma vez por todas...</p>
+      <h2 class="mt-4 font-display text-4xl uppercase tracking-tight sm:text-6xl">
+        A culpa <span class="text-brand-red">não é sua.</span>
+      </h2>
+      <div class="mt-12 grid gap-4 text-left md:grid-cols-2" id="reasons"></div>
+      <p class="mx-auto mt-12 max-w-2xl font-display text-2xl uppercase sm:text-3xl">
+        É por isso que você precisa do
+        <span class="text-brand-red">Guia de Polimento Técnico</span> agora.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 05 — PASSO A PASSO ============ -->
+  <section class="bg-ink px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-5xl">
+        Estes são os <span class="text-brand-yellow">4 passos</span><br />
+        para você dominar o polimento técnico:
+      </h2>
+      <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" id="steps"></div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 06 — ENTREGÁVEIS ============ -->
+  <section class="bg-light px-6 py-20 text-ink sm:py-24">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-5xl">Tudo que você vai receber</h2>
+      <p class="mt-3 text-center text-sm uppercase tracking-widest text-neutral-500">Acesso imediato após a compra</p>
+      <ul class="mt-12 space-y-3" id="deliverables"></ul>
+
+      <div class="mt-8 rounded-xl border-2 border-dashed p-6"
+        style="border-color: var(--brand-red); background-color: rgba(224,23,39,0.08);">
+        <div class="mb-3 inline-flex items-center gap-2 rounded-full bg-brand-red px-3 py-1 text-xs font-bold uppercase tracking-widest text-white">
+          🎁 Bônus exclusivos
+        </div>
+        <ul class="space-y-3 text-sm sm:text-base">
+          <li class="flex items-start gap-3">
+            <span class="text-brand-red">→</span>
+            <span>Acesso ao <strong>grupo exclusivo no WhatsApp</strong> com outros donos de estética para trocar experiências e tirar dúvidas.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-red">→</span>
+            <span><strong>Imersão gravada</strong> sobre polimento comercial e técnico na prática.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 07 — PRA QUEM SERVE ============ -->
+  <section class="bg-ink px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-5xl">
+        Pra quem <span class="text-brand-yellow">serve</span>?
+      </h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <div class="rounded-xl border border-brand-yellow/30 bg-ink-soft p-6">
+          <h3 class="mb-5 font-display text-xl uppercase text-brand-yellow">É pra você que...</h3>
+          <ul class="space-y-3" id="forYou"></ul>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-ink-soft p-6">
+          <h3 class="mb-5 font-display text-xl uppercase text-white/70">NÃO é pra você que...</h3>
+          <ul class="space-y-3" id="notForYou"></ul>
+        </div>
+      </div>
+      <p class="mt-10 text-center text-sm text-white/70 sm:text-base">
+        Se você se identifica com ao menos <strong class="text-white">2 itens</strong>, o Guia é pra você.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 08 — ANCORAGEM ============ -->
+  <section class="bg-surface px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-5xl">
+        Se você fosse <span class="text-brand-red">pagar separado</span>
+      </h2>
+      <p class="mt-3 text-center text-sm uppercase tracking-widest text-white/50">Valor real de cada item</p>
+      <ul class="mt-10 divide-y divide-white/10 overflow-hidden rounded-xl bg-ink-soft" id="anchor"></ul>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 09 — PREÇO + BOTÃO ============ -->
+  <section id="checkout" class="bg-ink px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-brand-yellow">Chega de adiar</p>
+      <h2 class="mt-3 font-display text-3xl uppercase tracking-tight sm:text-5xl">
+        Por menos do que um almoço,<br />
+        você padroniza sua estética <span class="text-brand-red">hoje</span>.
+      </h2>
+      <div class="mt-10" data-price-card></div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 10 — PREÇO DE FICAR PARADO ============ -->
+  <section class="bg-light px-6 py-24 text-ink">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-brand-red">O preço de ficar parado</p>
+      <h2 class="mt-6 font-display text-3xl uppercase leading-tight tracking-tight sm:text-5xl">
+        Quanto te custa <span class="text-brand-red">um único carro</span> retrabalhado por mês?
+      </h2>
+      <p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-neutral-700 sm:text-lg">
+        Um cliente premium insatisfeito não volta e ainda fala mal para três amigos. Em 6 meses
+        sem padrão, você perde mais em reputação do que pagaria
+        <strong class="text-ink">300 vezes</strong> por este guia.
+      </p>
+      <p class="mt-8 font-display text-2xl uppercase sm:text-3xl">
+        A pergunta não é se você pode comprar.<br />
+        É <span class="text-brand-red">quanto custa continuar sem</span>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 11 — AUTORIDADE ============ -->
+  <section class="bg-ink px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-4xl">
+      <p class="text-center text-xs font-bold uppercase tracking-[0.3em] text-brand-yellow">Quem está por trás</p>
+      <div class="mt-8 flex flex-col items-center gap-5 text-center">
+        <img
+          src="https://guia-diagnostico-polimento-v2.lovable.app/__l5e/assets-v1/eaf8cf7a-2e7d-4c53-9490-2d763dfa949d/mateus.jpg"
+          alt="Mateus Vip Car Detail" width="120" height="120" loading="lazy"
+          class="h-[120px] w-[120px] rounded-full object-cover ring-4 ring-brand-red" />
+        <div>
+          <h3 class="font-display text-3xl uppercase">Mateus Vip Car Detail</h3>
+          <p class="mt-1 text-sm uppercase tracking-widest text-brand-yellow">
+            Master Trainer certificado SONAX · +4.000 profissionais treinados
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto mt-8 max-w-2xl space-y-4 text-center text-sm leading-relaxed text-white/80 sm:text-base">
+        <p>Sou fundador e dono da VIP Car Detail, e estou no mercado de estética automotiva desde 2006. São quase <strong class="text-white">20 anos</strong> vivendo, errando e evoluindo dentro desse setor.</p>
+        <p>Já treinei mais de <strong class="text-white">4.000 profissionais</strong> e sou <strong class="text-white">Master Trainer certificado pela SONAX</strong>. Mas o que me move não são os números, é a missão.</p>
+        <p>Passei por tudo que você vive hoje: a dúvida, o cansaço, a falta de reconhecimento, o medo de cobrar mais. Foi exatamente isso que me fez estudar, aplicar e me tornar um dos maiores especialistas em estética automotiva do país.</p>
+        <p>Hoje eu ensino profissionais a pararem de trocar hora por dinheiro e construírem uma estética automotiva de verdade.</p>
+      </div>
+      <div class="mt-12" data-price-card></div>
+    </div>
+  </section>
+
+  <!-- ============ DOBRA 12 — FAQ + RODAPÉ ============ -->
+  <section class="bg-surface px-6 py-20 sm:py-24">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="text-center font-display text-3xl uppercase tracking-tight sm:text-5xl">
+        Perguntas <span class="text-brand-yellow">frequentes</span>
+      </h2>
+      <div class="mt-10 divide-y divide-white/10 overflow-hidden rounded-xl bg-ink-soft" id="faqs"></div>
+    </div>
+  </section>
+
+  <footer class="bg-ink px-6 py-10 text-[0.875rem] text-[#666]">
+    <div class="mx-auto flex max-w-5xl flex-col items-center gap-3 text-center">
+      <p class="font-display text-xs uppercase tracking-[0.3em] text-white/60">VIP Car Detail · Mateus</p>
+      <p>© <span id="year"></span> Guia de Diagnóstico e Protocolo de Polimento Técnico. Todos os direitos reservados.</p>
+      <p class="max-w-xl text-xs text-[#555]">Este produto não garante resultados e não substitui treinamento prático presencial. Resultados variam conforme aplicação individual.</p>
+    </div>
+  </footer>
+</main>
+
+<!-- Social Proof Toast -->
+<div id="socialProof" aria-live="polite"
+     class="sp-toast sp-hidden fixed bottom-4 left-4 z-50 max-w-[92vw] sm:max-w-sm">
+  <div class="flex items-start gap-3 rounded-xl border border-white/10 bg-ink/95 p-3 pr-4 shadow-2xl backdrop-blur ring-1 ring-brand-yellow/30">
+    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-yellow/15">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-brand-yellow">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+      </svg>
+    </div>
+    <div class="min-w-0 text-sm leading-snug text-white">
+      <p><span class="font-bold" id="spName">João</span> comprou o
+         <span class="font-semibold text-brand-yellow">Guia de Diagnóstico e Protocolo de Polimento Técnico</span>
+         <span id="spTime">agora mesmo</span>!</p>
+      <p class="mt-0.5 text-[11px] font-semibold uppercase tracking-wider text-emerald-400">Compra aprovada</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---------- Data ----------
+  const testimonials = [
+    { name:"Rafael M.", when:"Ontem 14:32", text:"Cara, comprei mais por curiosidade. Não esperava esse nível de detalhe nos protocolos. Já apliquei em 3 carros essa semana, ZERO retrabalho. 🙌" },
+    { name:"Bruno S.",  when:"Hoje 09:11",  text:"Finalmente consegui treinar meu funcionário direito. Imprimi o checklist e colei na bancada. Mudou minha estética." },
+    { name:"Diego A.",  when:"Seg 18:47",  text:"A tabela de vernizes vale o preço sozinha. Peguei um Porsche semana passada e não tive medo de errar pela primeira vez." },
+    { name:"Lucas P.",  when:"Sex 21:03",  text:"Eu polia no feeling há 6 anos. Esse guia me deu o vocabulário técnico que faltava pra cobrar mais caro com segurança." },
+  ];
+  const voices = [
+    "Meu funcionário não faz do jeito certo, aí eu tenho que refazer tudo.",
+    "Tenho medo de pegar um carro caro e estragar o verniz.",
+    "Eu sei polir, mas não consigo explicar direito pro meu funcionário o que fazer.",
+    "Cada carro que chega eu fico na dúvida: será que esse verniz aguenta o composto?",
+    "O problema não é falta de cliente, é falta de padrão na execução.",
+    "Se eu não estou presente, a qualidade cai. E eu não consigo sair do operacional por causa disso.",
+  ];
+  const reasons = [
+    "Sem um protocolo documentado, é impossível padronizar o polimento sem depender da sua presença.",
+    "Sem saber identificar o tipo de verniz, é impossível escolher o abrasivo certo sem correr risco de estragar o carro.",
+    "Sem um método claro, é impossível treinar um funcionário para executar com o mesmo padrão que você.",
+    "Sem uma referência técnica, é impossível tomar decisões seguras na frente de um verniz que você nunca viu antes.",
+  ];
+  const steps = [
+    { n:"01", title:"Diagnostique", text:"Identifique com precisão o tipo de verniz que está na sua frente em segundos.", image:"https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788252/01_Diagnostique_vzvqwj.jpg" },
+    { n:"02", title:"Escolha",      text:"Selecione a politriz, o composto e o disco certos para aquele verniz específico.", image:"https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788344/02_Escolha_wbami4.jpg" },
+    { n:"03", title:"Execute",      text:"Siga o protocolo de polimento passo a passo com segurança e precisão técnica.",   image:"https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788344/03_Execute_zwcxpj.jpg" },
+    { n:"04", title:"Replique",     text:"Use o checklist de entrega e treine seu funcionário para manter o mesmo padrão.",  image:"https://res.cloudinary.com/dnpkrb9wy/image/upload/v1781788345/04_Replique_clzi85.jpg" },
+  ];
+  const deliverables = [
+    { strong:"1 guia completo", rest:"em PDF com 10 capítulos de diagnóstico e protocolo de polimento técnico." },
+    { strong:"5 protocolos prontos", rest:"para cada tipo de verniz, do convencional ao fosco." },
+    { strong:"1 tabela de referência", rest:"com os vernizes das principais marcas premium e suas características." },
+    { strong:"1 checklist de entrega", rest:"pronto para imprimir e usar na bancada com sua equipe." },
+    { strong:"1 certificado oficial", rest:"de Diagnóstico e Protocolo de Polimento Técnico assinado por Mateus Vip Car Detail, Master Trainer certificado pela SONAX." },
+  ];
+  const forYou = [
+    "Já tem uma estética funcionando e quer padronizar a execução do polimento.",
+    "Tem funcionário mas sente que a qualidade cai quando você não está presente.",
+    "Quer atender carros premium com segurança e sem medo de estragar o verniz.",
+    "Sabe polir mas nunca teve um método documentado para ensinar sua equipe.",
+  ];
+  const notForYou = [
+    "Nunca pegou uma politriz na vida e está começando do zero absoluto.",
+    "Já tem um sistema de treinamento consolidado e padronizado na sua estética.",
+  ];
+  const anchorItems = [
+    { label:"Guia de Diagnóstico e Protocolo de Polimento Técnico (10 capítulos)", price:"R$ 57" },
+    { label:"1 certificado oficial de Diagnóstico e Protocolo de Polimento Técnico assinado por Mateus Vip Car Detail, Master Trainer certificado pela SONAX", price:"R$ 30" },
+    { label:"Bônus: Acesso ao grupo exclusivo no WhatsApp com outros donos de estética para trocar experiências e tirar dúvidas", price:"R$ 30" },
+    { label:"Bônus: Imersão gravada sobre polimento comercial e técnico na prática", price:"R$ 30" },
+  ];
+  const faqs = [
+    { q:"Como funciona o pagamento?", a:"Você pode pagar via Pix, cartão de crédito em até 8x ou boleto. A liberação é automática após a confirmação." },
+    { q:"É seguro comprar?", a:"Sim. O pagamento é processado por plataforma com criptografia bancária. Seus dados não são armazenados por nós." },
+    { q:"Funciona pra minha estética?", a:"Se você já trabalha com polimento e quer padronizar a execução, sim. O método se adapta de estética solo a equipes grandes." },
+    { q:"E a garantia?", a:"Você tem 7 dias para testar. Se não fizer sentido, devolvemos 100% do valor. Sem perguntas." },
+    { q:"Como recebo o acesso?", a:"Após a confirmação do pagamento, você receberá um e-mail com os dados de acesso à Área de Membros. Nela, você encontrará todos os materiais do curso disponíveis para consulta." },
+  ];
+
+  const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  const checkIcon = `<span aria-hidden class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full text-xs font-bold text-white" style="background-color:#22c55e">✓</span>`;
+
+  // Render testimonials
+  document.getElementById('testimonials').innerHTML = testimonials.map(t => `
+    <article class="mx-auto w-full max-w-[400px] rounded-xl bg-ink-soft p-4 text-white shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
+      <div class="mb-2 flex items-center justify-between text-xs">
+        <div class="flex items-center gap-2">
+          <div class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-red text-[10px] font-bold">${esc(t.name.charAt(0))}</div>
+          <span class="font-semibold">${esc(t.name)}</span>
+        </div>
+        <span class="text-white/40">${esc(t.when)}</span>
+      </div>
+      <p class="text-sm leading-relaxed text-white/90">${esc(t.text)}</p>
+      <div class="mt-2 text-right text-[10px] text-white/40">visualizada ✓✓</div>
+    </article>`).join('');
+
+  document.getElementById('voices').innerHTML = voices.map(v =>
+    `<blockquote class="rounded-lg bg-ink-soft p-5 italic text-white/85 border-l-[3px] border-brand-red">“${esc(v)}”</blockquote>`).join('');
+
+  document.getElementById('reasons').innerHTML = reasons.map((r,i) => `
+    <div class="rounded-lg bg-surface-2 p-6 text-white shadow-sm">
+      <div class="mb-3 font-display text-2xl text-brand-yellow">0${i+1}</div>
+      <p class="text-sm leading-relaxed text-white/85">${esc(r)}</p>
+    </div>`).join('');
+
+  document.getElementById('steps').innerHTML = steps.map(s => `
+    <div class="group relative rounded-xl border border-white/10 bg-ink-soft p-6 transition hover:border-brand-red">
+      <div class="font-display text-6xl leading-none" style="color:rgba(224,23,39,.9)">${s.n}</div>
+      <h3 class="mt-4 font-display text-2xl uppercase">${esc(s.title)}</h3>
+      <p class="mt-2 text-sm leading-relaxed text-white/70">${esc(s.text)}</p>
+      <img src="${s.image}" alt="${esc(s.title)}" loading="lazy" class="mt-5 aspect-square w-full rounded-lg object-cover" />
+    </div>`).join('');
+
+  document.getElementById('deliverables').innerHTML = deliverables.map(d => `
+    <li class="flex items-start gap-4 rounded-lg bg-white p-5 shadow-sm ring-1 ring-black/5">
+      ${checkIcon}
+      <p class="text-sm leading-relaxed sm:text-base"><strong class="font-bold">${esc(d.strong)}</strong> ${esc(d.rest)}</p>
+    </li>`).join('');
+
+  document.getElementById('forYou').innerHTML = forYou.map(t =>
+    `<li class="flex items-start gap-3 text-sm text-white/85">${checkIcon}<span>${esc(t)}</span></li>`).join('');
+
+  document.getElementById('notForYou').innerHTML = notForYou.map(t => `
+    <li class="flex items-start gap-3 text-sm text-white/70">
+      <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-white/10 text-xs text-white/60">✗</span>
+      <span>${esc(t)}</span>
+    </li>`).join('');
+
+  document.getElementById('anchor').innerHTML = anchorItems.map(i => `
+    <li class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4">
+      <span class="min-w-0 text-sm text-white/85 sm:text-base">${esc(i.label)}</span>
+      <span class="shrink-0 text-sm text-white/50 line-through sm:text-base">${esc(i.price)}</span>
+    </li>`).join('') + `
+    <li class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 bg-brand-red/10 px-5 py-5">
+      <span class="font-display text-lg uppercase">Total real</span>
+      <span class="font-display text-2xl text-brand-yellow line-through">R$ 147</span>
+    </li>`;
+
+  document.getElementById('faqs').innerHTML = faqs.map(f => `
+    <details class="group">
+      <summary class="grid w-full cursor-pointer list-none grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left transition hover:bg-white/5">
+        <span class="min-w-0 text-sm font-semibold text-white sm:text-base">${esc(f.q)}</span>
+        <span class="faq-plus shrink-0 font-display text-2xl text-brand-red transition-transform">+</span>
+      </summary>
+      <div class="px-5 pb-5 text-sm leading-relaxed text-white/75">${esc(f.a)}</div>
+    </details>`).join('');
+
+  // Price card (rendered into both placeholders)
+  const priceCardHTML = `
+    <div class="mx-auto w-full max-w-xl rounded-2xl border-2 bg-ink-soft p-6 sm:p-8" style="border-color:var(--brand-red)">
+      <p class="text-center text-xs uppercase tracking-[0.3em] text-white/50">Hoje, por apenas</p>
+      <div class="mt-3 text-center">
+        <div class="font-display text-4xl text-white sm:text-5xl">8x de <span class="text-brand-yellow">R$ 5,50</span></div>
+        <p class="mt-2 text-sm text-white/70">ou <strong class="text-white">R$ 37,00</strong> à vista</p>
+      </div>
+      <a href="https://checkout.pagtrust.com.br/ck1624e1fa?funnel=fn4d69c5d3" target="_blank" rel="noopener noreferrer"
+         class="mt-6 block w-full rounded-xl px-6 py-4 text-center font-display text-lg uppercase tracking-wide text-white shadow-lg transition active:scale-[0.99]"
+         style="background-color:var(--brand-red); box-shadow:0 10px 30px -10px rgba(224,23,39,0.6)">
+        Quero acesso agora →
+      </a>
+      <div class="mt-5 flex flex-wrap justify-center gap-3 text-[11px] uppercase tracking-widest text-white/60">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10"><span>⚡</span> Acesso imediato</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10"><span>🛡</span> Garantia 7 dias</span>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10"><span>🔒</span> Compra segura</span>
+      </div>
+      <div class="mt-6 rounded-lg bg-black/40 p-4">
+        <p class="mb-3 text-center text-xs font-semibold uppercase tracking-widest text-brand-yellow">Como funciona</p>
+        <ol class="space-y-2 text-xs text-white/75 sm:text-sm">
+          <li>1. Você faz o pagamento via Pix ou cartão.</li>
+          <li>2. Recebe o acesso por e-mail em menos de 2 minutos.</li>
+          <li>3. Baixa o PDF, imprime o checklist e começa hoje mesmo.</li>
+        </ol>
+      </div>
+    </div>`;
+  document.querySelectorAll('[data-price-card]').forEach(el => el.innerHTML = priceCardHTML);
+
+  // ---------- Social Proof ----------
+  const NAMES = ["João","Pedro","Lucas","Gabriel","Rafael","Matheus","Felipe","Bruno","Carlos","Rodrigo","Thiago","Daniel","Diego","Eduardo","Fernando","Gustavo","Henrique","Igor","Leonardo","Marcelo","Murilo","Otávio","Paulo","Renato","Ricardo","Vinícius","André","Anderson","Caio","Davi","Enzo","Fábio","Guilherme","Júlio","Marcos","Nícolas","Rogério","Samuel","Sérgio","Vitor","Wesley","Alexandre","Arthur","Breno","Cauã","Danilo","Erick","Heitor","Ian","Kauã"];
+  const TIMES = ["agora mesmo","há 1 minuto","há 2 minutos","há 3 minutos","há 5 minutos"];
+  const rand = a => a[Math.floor(Math.random()*a.length)];
+  const toast = document.getElementById('socialProof');
+  const spName = document.getElementById('spName');
+  const spTime = document.getElementById('spTime');
+
+  function showOne(){
+    spName.textContent = rand(NAMES);
+    spTime.textContent = rand(TIMES);
+    toast.classList.remove('sp-hidden');
+    setTimeout(() => {
+      toast.classList.add('sp-hidden');
+      setTimeout(showOne, 4000 + Math.random()*4000);
+    }, 5000);
+  }
+  setTimeout(showOne, 3500);
+</script>
+
+</body>
+</html>
