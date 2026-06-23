@@ -78,7 +78,7 @@ function Dobra01() {
           executa com segurança e consegue repassar para sua equipe{" "}
           <strong className="text-[var(--brand-yellow)]">hoje mesmo</strong>.
         </p>
-        <div className="mt-2 flex w-full justify-center sm:mt-3">
+        <div className="-mt-4 -mb-12 flex w-full justify-center sm:-mt-6 sm:-mb-20">
           <div className="relative">
             <div
               aria-hidden
@@ -91,7 +91,7 @@ function Dobra01() {
               width={560}
               height={700}
               fetchPriority="high"
-              className="relative w-[360px] sm:w-[480px] md:w-[580px] lg:w-[640px] drop-shadow-2xl"
+              className="relative block w-[320px] sm:w-[440px] md:w-[540px] lg:w-[600px] drop-shadow-2xl"
             />
           </div>
         </div>
